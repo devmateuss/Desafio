@@ -9,7 +9,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100),
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Esse campo não pode ser vazio"
+          }
+        }
       }
     });
   },

@@ -9,10 +9,17 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(200),
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Este campo não pode ser vazio"
+          }
+        }
       },
       departament: {
         type: Sequelize.INTEGER,
+        allowNull: false,
         references: {
           model:'Departaments',
           key: 'id',

@@ -9,13 +9,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       description: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       value: {
-        type: Sequelize.DECIMAL
+        type: Sequelize.DECIMAL(10,2),
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Este campo é obrigatorio"
+          }
+        }
       },
       agent: {
         type: Sequelize.INTEGER,
+        allowNull: false,
         references: {
           model:'Agents',
           key: 'id',
