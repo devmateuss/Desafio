@@ -2,18 +2,10 @@
 module.exports = (sequelize, DataTypes) => {
   const Moviment = sequelize.define('Moviment', {
     description: DataTypes.STRING,
-    value: DataTypes.DECIMAL,
-    agent: {
-      type: DataTypes.INTEGER,
-      references: {
-        model:'Agent',
-        key: 'id',
-        deferrable: sequelize.Deferrable.INITIALLY_IMMEDIATE
-      }
-    }
-  }, {});
+    value: DataTypes.DECIMAL
+  }, { underscored: false, timestamps: false });
   Moviment.associate = function(models) {
-    this.belongsTo(models.Agent)
+    Moviment.belongsTo(models.Agent)
   };
   return Moviment;
 };

@@ -17,14 +17,14 @@ module.exports = {
           }
         }
       },
-      departament: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model:'Departaments',
-          key: 'id',
-          deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-        }
+      DepartamentId: {  
+        allowNull: false,  
+        type: Sequelize.INTEGER,  
+        onDelete: 'CASCADE',  
+        references: {  
+          model: 'Departaments',  
+          key: 'id'  
+        }  
       }
     });
   },

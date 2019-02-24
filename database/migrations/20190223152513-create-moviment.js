@@ -20,14 +20,14 @@ module.exports = {
           }
         }
       },
-      agent: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model:'Agents',
-          key: 'id',
-          deferrable: Sequelize.Deferrable.INITIALLY_IMMEDIATE
-        }
+      AgentId: {  
+        allowNull: false,  
+        type: Sequelize.INTEGER,  
+        onDelete: 'CASCADE',  
+        references: {  
+          model: 'Agents',  
+          key: 'id'  
+        }  
       }
     });
   },

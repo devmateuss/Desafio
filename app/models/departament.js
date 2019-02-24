@@ -1,10 +1,9 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Departament = sequelize.define('Departament', {
-    name: DataTypes.STRING
-  }, {});
+    name: DataTypes.STRING,
+  }, { underscored: false, timestamps: false });
   Departament.associate = function(models) {
-    Departament.hasMany(models.Agent)
   };
   return Departament;
 };
