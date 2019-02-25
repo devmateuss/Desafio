@@ -1,0 +1,75 @@
+.main {
+    display: flex;
+    flex: 1 100%;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-start
+}
+.formContainer{
+    flex-direction: column;
+}
+.subBar{
+    display: flex;
+    background-color:#A9A9A9;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+}
+.fieldBody{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.fieldTitle{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.field{
+    font-weight: 500;
+    size: 5;
+    font-weight: 500;
+}
+.title{
+    font-weight: bold;
+}
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
+}
+.registerBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 5px
+}
+input{
+    margin-right: 10px;
+    border-radius: 20px;
+    padding-left: 5px
+}
+button{
+    margin-left: 5px;
+    border-color: #fff;
+    border-radius: 20px;
+    font-size: 10px;
+    height: 30px;
+    width: 100px;
+    border-style: solid
+}
+select{
+    height: 25px;
+}
+h6:hover{
+    color: #fff
+}
+#name:hover{
+    color: #D4D3D3;
+}

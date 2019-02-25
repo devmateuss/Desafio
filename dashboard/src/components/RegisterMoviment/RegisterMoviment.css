@@ -1,0 +1,78 @@
+.subBar{
+    display: flex;
+    background-color:#A9A9A9;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    padding-left: 20px 
+}
+.fieldTitle{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.title{
+    font-weight: bold;
+}
+.fieldBody{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding-left: 30px
+}
+.field{
+    font-weight: 500;
+    size: 5;
+}
+.test {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+}
+#description{
+    height: 30px;
+    flex-wrap: wrap
+}
+.descriptionText{
+    font-size: 12px;
+}
+.registerBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 5px
+}
+input{
+    margin-right: 10px;
+    border-radius: 20px;
+    padding-left: 5px
+}
+
+button{
+    margin-left: 5px;
+    border-color: #fff;
+    border-radius: 20px;
+    font-size: 10px;
+    height: 30px;
+    width: 100px;
+    border-style: solid
+}
+h6:hover{
+    color: #fff
+}
+#name:hover{
+    color: #D4D3D3
+}
+#moviment{
+    padding-right: 450px;
+    padding-left: 100x;
+}

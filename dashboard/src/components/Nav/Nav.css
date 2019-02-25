@@ -1,0 +1,15 @@
+.aside{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    justify-self: start; 
+    display: flex;
+    float: 1;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.titles{
+    font-weight: 500;
+    margin: 10px 0 10px
+}
