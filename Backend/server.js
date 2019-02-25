@@ -8,7 +8,7 @@ const resolvers = require('./api/resolvers')
 
 
 const app = express();
-const graphqlEndpoint = '/'
+const graphqlEndpoint = '/graphql'
 
 const { makeExecutableSchema } = require('graphql-tools')
 
@@ -25,9 +25,9 @@ app.use(
   graphqlEndpoint,
   bodyParser.json(),
   graphqlHTTP({
-  schema,
-  graphiql: true
-}))
+    schema,
+    graphiql: true
+  }))
 
 
 app.listen(3003)

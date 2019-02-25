@@ -18,7 +18,7 @@ class RegisterMoviment extends Component {
                     value: 342.23
                 },
                 {
-                    agent: "Rogrigues meneses",
+                    agent: "Rodrigues meneses",
                     description: "Pagamento de qualquer coisa",
                     value: 897.23
                 }
@@ -32,7 +32,7 @@ class RegisterMoviment extends Component {
             <div className="container">
                 <div className="subBar">
                     <h6 onClick={() => this.setState({ registerMoviment: !this.state.registerMoviment })}
-                    id="moviment"
+                        id="moviment"
                     >Cadastrar Movimentação</h6>
                     <h6>Filtrar por Departamento</h6>
                 </div>
