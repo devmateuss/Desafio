@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+
+import { body } from '../../Ultils/bodyRequest'
 import './RegisterAgents.css'
 class RegisterAgentens extends Component {
     constructor(props) {
@@ -23,8 +25,6 @@ class RegisterAgentens extends Component {
             registerDepartament: false
         }
     }
-
-    validation
 
     render() {
         return (
